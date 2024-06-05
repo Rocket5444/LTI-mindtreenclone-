@@ -1,0 +1,182 @@
+/* Styles for /services/digital-engineering */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+}
+body{
+    position: relative;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    height: 14svh;
+    font-family: Poppins;
+    padding: 0 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar>.top{
+    height: 7svh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+    color: black;
+}
+
+.navbar>.bottom{
+    height: 7svh;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: black;
+}
+.bottom>.logo{
+    color: navy;
+    margin: 0 20px;
+}
+.bottom>.dropdowns{
+    display: flex;
+    gap: 10px;
+    margin-left: auto; 
+    font-weight: 100;  
+}
+
+/* Main */
+    /* HERO */
+main>.hero{
+    min-height: 50svh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 4rem;
+    background: url(../../assets/bg3.webp) no-repeat center center/cover;
+    font-family: Poppins;
+    color: white;
+    justify-content: center;
+    position: relative;
+}
+.hero>h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.hero>h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.hero>.arrow{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    animation: infinite 2s arrow;
+}
+.arrow>i{
+    font-size: 70px;
+    color: white;
+    cursor: pointer;
+    
+}
+@keyframes arrow{
+    0%{
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+    /* DIGITAL ENGINEERING SERVICES */
+.digiServices{
+    min-height: 50svh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+    font-family: Poppins;
+    color: black;
+    background: white;
+    width: 100%;
+}
+.digiServices>.content{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+.digiServices>.content>.titleLeft{
+    align-self: flex-start;
+    min-width: 30%;
+    font-size: 2rem;
+    height: 100%;
+    color: navy;
+}
+.digiServices>.content>.contentText>p{
+    height: 100%;
+    column-count: 2;
+    column-gap: 40px;
+    font-size: 0.8rem;
+}
+
+    /* Capabilities */
+main>.capabilities{
+    min-height: 50svh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+    font-family: Poppins;
+    color: black;
+    background: #e7e7e7;
+    width: 100%;
+}
+.capabilities>h1{
+    font-size: 2rem;
+    font-weight: 200;
+    color: navy;
+    text-align: center;
+}
+.capabilities>.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+.capabilities>.cards>.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+}
